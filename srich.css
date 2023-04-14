@@ -1,0 +1,65 @@
+.menu-icon {
+    position: relative;
+    padding: 0.3rem;
+    display: inline-flex;
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    z-index: 1040;
+}
+.menu-icon-box {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: relative;
+}
+.menu-icon-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.menu-icon-inner,
+.menu-icon-inner::before,
+.menu-icon-inner::after {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+.menu-icon-inner::before,
+.menu-icon-inner::after {
+    content: "";
+    display: block;
+}
+.menu-icon-inner::before {
+    top: -8px;
+}
+.menu-icon-inner::after {
+    bottom: -8px;
+}
+
+
+.menu-active .menu {
+    /* transform: translateX(0); */
+}
+.menu {
+    display: none;
+    background-color: blueviolet;
+    z-index: 1030;
+    /* transform: translateX(-100%); */
+    /* transition: transform 300ms cubic-bezier(.2s, 0, .2, 1); */
+}
+/* .menu-inner {
+ display: flex; 
+    flex-direction:column-reverse;
+} */
+
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: right;
+}
